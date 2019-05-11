@@ -35,7 +35,7 @@ ENGINE=InnoDB
 ;
 
 También será necesario introducir un primer registro del que partirá nuestro primer scrapeo:
-INSERT INTO `SCRAPERS_YT`.`dominios` (`id`, `dominio`, `protocolo`) VALUES ('1', 'elpais.es', 'https');
+INSERT INTO `dominios` (`id`, `dominio`, `protocolo`) VALUES ('1', 'elpais.es', 'https');
 
 Una vez teniendo preparada la BD, simplemente hay que modificar las variables de conexión a la base de datos dentro de "seo-crawler.py":
 host="HOST",
