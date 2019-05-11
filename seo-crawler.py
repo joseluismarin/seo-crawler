@@ -63,10 +63,10 @@ def ejecutaCrawleo(dominioExacto, url, subdominio, protocolo, mycursor, mydb):
         
 def lanzaCrawler():
     mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    passwd="", 
-    database="SCRAPERS_YT"
+    host="HOST",
+    user="USER",
+    passwd="PASS", 
+    database="BD"
     )
     mycursor = mydb.cursor()
     mycursor.execute("SELECT dominio, estado, subdominio, protocolo FROM DOMINIOS WHERE estado != 1;")     
